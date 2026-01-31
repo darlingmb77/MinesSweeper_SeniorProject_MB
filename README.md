@@ -73,6 +73,19 @@ The application will have its database storage and data sources from a MySQL dat
 In conclusion, this Minesweeper strategy-based application project will start with the different requirements needed for the definition and system design, followed by development of the front-end game, logic, back-end API, and database schema. Using all the criteria in this proposed project specifications, this application will be able to integrate with databases, RESTful API, and interactive interfaces offered to users with a strong foundation for helping me improve and learn while practicing real-life system designs from the ground up.
 
 
+**Solution architecture diagram**
+<img width="1157" height="720" alt="image" src="https://github.com/user-attachments/assets/f51b08fb-5452-4b22-8f4d-ff34d56b1f07" />
+
+
+
+
+**Wireframe diagram(s)**
+<img width="1211" height="829" alt="image" src="https://github.com/user-attachments/assets/da5e98dd-470f-469f-acd3-bbaded00d4cd" />
+
+<img width="1228" height="931" alt="image" src="https://github.com/user-attachments/assets/23ccadb7-5020-443e-90df-dcba58420a24" />
+
+
+
 ##**Example User Stories**
 1.	As a player, I want to enter a username before starting a game so that my score can be saved and compared with others.
 2.	As a player, I want to click and flag tiles on the game board so that I can play Minesweeper using familiar rules.
@@ -133,3 +146,10 @@ Scenario:
 2.	The system retrieves aggregated data from the database.
 3.	The system displays leaderboards and statistics.
 Expected result: Player views performance analytics.
+
+**Use Case Diagram-**
+<img width="573" height="445" alt="image" src="https://github.com/user-attachments/assets/ce6c33e8-ceca-404a-b2d5-f8094b37574a" />
+
+
+
+
