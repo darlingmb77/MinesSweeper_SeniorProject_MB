@@ -3,33 +3,56 @@ My interpretation of that classic Windows game
 
 Project Proposal: Strategy-Based Minesweeper Web Application
 
+- [Introduction](#introduction)
+- [Purpose of Software](#purpose-of-software)
+- [High-Level Functional Requirements](#high-level-functional-requirements)
+- [Survey of Relevant Tools and Literature](#survey-of-relevant-tools-and-literature)
+- [Similar Software and Comparison](#similar-software-and-comparison)
+- [Input, Processing, and Output](#input-processing-and-output)
+- [Data Storage and Data Sources](#data-storage-and-data-sources)
+- [Project Plan and Conclusion](#project-plan-and-conclusion)
+- [Solution Architecture Diagram](#solution-architecture-diagram)
+- [Wireframe Diagrams](#wireframe-diagrams)
+- [Example User Stories](#example-user-stories)
+- [Use Cases](#use-cases)
+  - [User Case 1 - Start a New Game](#title-user-case-1---start-a-new-game)
+  - [User Case 2 - Interact with Game Board](#title-user-case-2---interact-with-game-board)
+  - [User Case 3 - Complete a Game](#title-user-case-3---complete-a-game)
+  - [User Case 4 - Save Game Results](#title-user-case-4---save-game-results)
+  - [User Case 5 - View Statistics Dashboard](#title-user-case-5---view-statistics-dashboard)
+- [Use Case Diagram](#use-case-diagram-)
 
-**Introduction**
+
+
+
+
+
+## **Introduction**
 
 Given that this is my last year of college, I chose to proceed with the more exciting and fun coding application for this project.  I plan to create a Minesweeper web-based application that combines game logic, data persistence, and performance analysis for users. The purpose of this project is to develop a fun, interactive game that I get to work on throughout the semester by following the phases of the software development life cycle. By the end of this project, I should be able to implement tests and refine the project to become something I can be proud of for my college career, showcasing all that I have learned from Santa Fe College.
 
 
-**Purpose of Software**
+## **Purpose of Software**
 
 The purpose of this game is to recreate in a new modern way the Minesweeper that was a mini people's favorite Windows desktop game application. This project will offer the user a dashboard to view past statistics on games played by other users. This will be done with front-end development, back-end API design, database, and client-server communication. Fully encompassing an educational and strategy-based fun project.
 
 
-**High-Level Functional Requirements**
+## **High-Level Functional Requirements**
 
 At the high-functioning level, the application will allow users to play the mind sweeper game through the web interface that will be built with React. The users will be able to start and interact with the game board pieces to complete the different games.  When a user starts a game, they will be prompted for a username. The application will send the user's completion score, username, and completion time through the REST API hosted on Render to my SQL database.
 
 
-**Survey of Relevant Tools and Literature**
+## **Survey of Relevant Tools and Literature**
 
 Several technologies and learning resources will support the development of this project, such as React documentation and tutorials from YouTube from helpful programmers, and MySQL documentation. With Node.js and Express.js offering patterns for RESTful APIs, MySQL provides documentation for different database SQL designs and querying. Hosting platforms such as Render have several practical examples of cloud-based API using these different materials and tutorials related to the web-based game. The overall design approach will be covered by helpful resources.
 
 
-**Similar Software and Comparison**
+## **Similar Software and Comparison**
 
 Several different versions of Minesweeper already exist for web-based Minesweeper. Using those tools and the literature provided from minesweepers on Wikipedia about the description of how the game works will offer knowledge on assessing applications similar to those that I will be developing.  Understanding that this project differs by focusing more on the simplicity and custom analytics rather than the commercial gaming features that come with the others, not to mention the fact that this project will be made from the ground up, will solidify the uniqueness of this version of the gaming application.
 
 
-**Input, Processing, and Output**
+## **Input, Processing, and Output**
 
 Input will be done clearly by the user with the interactions on the board, including mouse clicks, game selection, and flag placements. Additional user input will be the username to tally the score as you would at an arcade game, not requiring users to input a password or account information. Processing will be developed to be on both the server and client sides. On the front-end, HTML will handle game logic with tiles and check winning conditions, for example, and the back-end API processes the request and validates data while managing the database interactions. Output of the system includes the game state, the end-of-game results, and a statistical dashboard, showing win rates, top winners, displayed with times, and by points.
 
@@ -42,7 +65,7 @@ Input will be done clearly by the user with the interactions on the board, inclu
   -	Allow users to track improvement over time
 
   
-**Data Storage and Data Sources**
+## **Data Storage and Data Sources**
 
 
 The application will have its database storage and data sources from a MySQL database, which is an external application. This includes the tables for users, a collection of individual games played, and aggregated results. The data will be generated internally by the application itself without the use of third-party external API's and web scraping. Using Node.js app to Render for basic connections between repo and live app integrations. Stored data could be used to generate dashboards and show the comparison of top players based on time and correctly guessed tiles.
@@ -67,34 +90,34 @@ The application will have its database storage and data sources from a MySQL dat
     -	Overall performance trends across users
 
     
-**Project Plan and Conclusion**
+## **Project Plan and Conclusion**
 
 
 In conclusion, this Minesweeper strategy-based application project will start with the different requirements needed for the definition and system design, followed by development of the front-end game, logic, back-end API, and database schema. Using all the criteria in this proposed project specifications, this application will be able to integrate with databases, RESTful API, and interactive interfaces offered to users with a strong foundation for helping me improve and learn while practicing real-life system designs from the ground up.
 
 
-**Solution architecture diagram**
+## **Solution architecture diagram**
 <img width="1157" height="720" alt="image" src="https://github.com/user-attachments/assets/f51b08fb-5452-4b22-8f4d-ff34d56b1f07" />
 
 
 
 
-**Wireframe diagram(s)**
+## **Wireframe diagram(s)**
 <img width="1211" height="829" alt="image" src="https://github.com/user-attachments/assets/da5e98dd-470f-469f-acd3-bbaded00d4cd" />
 
 <img width="1228" height="931" alt="image" src="https://github.com/user-attachments/assets/23ccadb7-5020-443e-90df-dcba58420a24" />
 
 
 
-##**Example User Stories**
+## **Example User Stories**
 1.	As a player, I want to enter a username before starting a game so that my score can be saved and compared with others.
 2.	As a player, I want to click and flag tiles on the game board so that I can play Minesweeper using familiar rules.
 3.	As a player, I want to see my completion time when the game ends so that I can track my performance.
 4.	As a player, I want to view a leaderboard so that I can compare my results with other players.
 5.	As a player, I want to see past game statistics so that I can analyze strategies and improve over time.
 
-##**USE CASES**
-###Title: User Case 1 - Start a New Game
+## **USE CASES**
+### Title: User Case 1 - Start a New Game
 System: Minesweeper Web Application Front End
 Actor: Player
 Precondition: The application is loaded in the browser
@@ -106,7 +129,7 @@ Scenario:
 Expected result: A new game will begin.
 
 
-###Title: User Case 2 - Interact with Game Board
+### Title: User Case 2 - Interact with Game Board
 System: Minesweeper Web Application Front End
 Actor: Player
 Precondition: A game is active
@@ -117,7 +140,7 @@ Scenario:
 Expected result: The game progresses toward a win or loss.
 
 
-###Title: User Case 3 - Complete a Game
+### Title: User Case 3 - Complete a Game
 System: Minesweeper Web Application Front End
 Actor: Player
 Precondition: A game is in progress
@@ -127,7 +150,7 @@ Scenario:
 3.	The system calculates the final score.
 Expected result: Game results are generated.
 
-###Title: User Case 4 - Save Game Results
+### Title: User Case 4 - Save Game Results
 System: Backend API and Database
 Actor: Player
 Precondition: Game has ended
@@ -137,7 +160,7 @@ Scenario:
 3.	The data is stored in the MySQL database
 Expected result: Game results are saved successfully.
 
-###Title: User Case 5 - View Statistics Dashboard
+### Title: User Case 5 - View Statistics Dashboard
 System: Minesweeper Web Application Front End
 Actor: Player
 Precondition: Stored game data exists
@@ -147,7 +170,7 @@ Scenario:
 3.	The system displays leaderboards and statistics.
 Expected result: Player views performance analytics.
 
-**Use Case Diagram-**
+## **Use Case Diagram-**
 <img width="573" height="445" alt="image" src="https://github.com/user-attachments/assets/ce6c33e8-ceca-404a-b2d5-f8094b37574a" />
 
 
